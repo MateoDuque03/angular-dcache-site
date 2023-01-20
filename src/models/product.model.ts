@@ -1,6 +1,18 @@
 export interface Product {
-	id: string;
-	name: string;
+	id: number;
+	title: string;
 	price: number;
-	image: string;
+	description: string;
+	category: DetailCategory;
+	images: string[];
+}
+
+interface DetailCategory {
+	id: number,
+	name: string,
+	typeImg: string
+}
+
+export interface CreateProductDTO extends Omit<Product, 'id' | 'category'> {
+  categoryId: number
 }

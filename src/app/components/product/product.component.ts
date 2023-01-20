@@ -8,12 +8,19 @@ import { Product } from 'src/models/product.model';
 })
 export class ProductComponent implements OnInit {
   @Input() product: Product = {
-    id: '1',
-    name: '',
-    image: 'https://www.m2crowd.com/core/i/placeholder.png',
-    price: 200
+    id: 1,
+    title: '',
+    price: 200,
+    description: '',
+    category: {
+      id: 0,
+      name: '',
+      typeImg: ''
+    },
+    images: ['https://www.m2crowd.com/core/i/placeholder.png'],
   }
   @Output() addedProduct = new EventEmitter<Product>();
+  @Output() showDetail = new EventEmitter<number>();
 
   constructor() { }
 
@@ -22,5 +29,9 @@ export class ProductComponent implements OnInit {
 
   onAddToCart() {
     this.addedProduct.emit(this.product)
+  }
+
+  onShowDetail() {
+    this.showDetail.emit(this.product.id)
   }
 }

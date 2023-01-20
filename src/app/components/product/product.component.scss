@@ -1,3 +1,51 @@
-p, h2 {
-    margin: 0;
+p,
+h2 {
+  margin: 0;
+}
+
+.product {
+  margin-bottom: 3rem;
+  background: black;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 5px grey;
+
+  .body {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+
+    button {
+      // background-color: #f7321f;
+      border: none;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 0.2rem;
+      // margin: 0.5rem;
+      width: 100%;
+    }
+
+    button {
+      background-color: black; 
+      color: white; 
+      border: 2px solid #f44336;
+    }
+
+    button:hover {
+      background-color: #f44336;
+      color: white;
+    }
+  }
 }

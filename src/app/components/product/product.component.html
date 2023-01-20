@@ -1,6 +1,11 @@
 <div class="product">
-  <app-img [img]="product.image"></app-img>
-  <h2>{{ product.price }}</h2>
-  <p>{{ product.name }}</p>
-  <button (click)="onAddToCart()">Add Cart</button>
+  <app-img [img]="product.images[0]"></app-img>
+  <div class="body">
+    <h2>{{ product.price | currency }}</h2>
+    <p>{{ product.title }}</p>
+  </div>
+  <div class="buttons">
+    <button (click)="onShowDetail()">Mostrar Detalle</button>
+    <!-- <button (click)="onAddToCart()">Add Cart</button> -->
+  </div>
 </div>
