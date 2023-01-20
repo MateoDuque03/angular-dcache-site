@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/angular-store-shopping-cart",
+    "public": "dist/angular-store-shopping-cart-dcache",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -7,7 +7,7 @@ import { Product } from 'src/models/product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-store-shopping-cart';
+  title = 'angular-store-shopping-cart-dcache';
   register = {
     name: '',
     email: '',

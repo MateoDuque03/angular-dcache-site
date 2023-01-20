@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-store-shopping-cart": {
+    "angular-store-shopping-cart-dcache": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-store-shopping-cart",
+            "outputPath": "dist/angular-store-shopping-cart-dcache",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-store-shopping-cart:build:production"
+              "browserTarget": "angular-store-shopping-cart-dcache:build:production"
             },
             "development": {
-              "browserTarget": "angular-store-shopping-cart:build:development"
+              "browserTarget": "angular-store-shopping-cart-dcache:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-store-shopping-cart:build"
+            "browserTarget": "angular-store-shopping-cart-dcache:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "angular-store-shopping-cart"
+  "defaultProject": "angular-store-shopping-cart-dcache"
 }
